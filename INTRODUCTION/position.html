@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSITION</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <style>
+      :root {
+        --box-1: #ca447e;
+        --box-2: #d14977;
+        --box-3: #d85070;
+        --box-4: #e05b69;
+        --box-5: #e76662;
+        --box-6: #ee745a;
+        --box-7: #f48252;
+        --box-8: #f88f4b;
+        --box-9: #fb9c44;
+        --box-10: #fda83d;
+        --box-11: #feaf36;
+        --box-12: #ffb52f;
+        --box-width: 50px;
+      }
+
+      body {
+        padding: 5rem;
+      }
+
+      .container {
+        position: relative;
+        background-color: lightgrey;
+        height: 30rem;
+      }
+
+      span {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        width: 20px;
+        height: 20px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+
+      .box {
+        display: inline-block;
+        width: var(--box-width);
+        aspect-ratio: 1/1; /* hauteur identique à largeur*/
+        position: relative;
+      }
+
+      .box:not(:first-of-type) {
+        margin-left: 2rem;
+      }
+
+      .box1 {
+        background-color: var(--box-1);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .box2 {
+        background-color: var(--box-2);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      .box3 {
+        background-color: var(--box-3);
+        position: fixed;
+        top: 0;
+      }
+
+      .box4 {
+        background-color: var(--box-4);
+        position: sticky;
+        top: 3rem;
+      }
+
+      .box5 {
+        background-color: var(--box-5);
+      }
+
+      .box6 {
+        background-color: var(--box-6);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>https://sharemycode.fr/ua5</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae
+      similique amet assumenda ut aliquid, voluptatum impedit maiores aut
+      deserunt cumque explicabo quis reprehenderit quasi facilis, eius enim?
+      Odio est adipisci commodi. Molestiae, consequuntur! Reprehenderit
+      repudiandae magnam iure at obcaecati voluptate ad voluptatibus sint rerum
+      placeat, alias assumenda doloribus dolorem beatae fugiat earum
+      necessitatibus animi quos tenetur amet quia quas ipsa asperiores tempora?
+      Ad iusto repudiandae culpa consectetur. Animi aliquid officia laudantium
+      nemo, quidem, magni consequatur doloribus exercitationem eaque quo
+      quisquam soluta a deleniti quae molestiae ipsa aperiam quas officiis
+      accusamus eos libero ex! Quibusdam sed unde vero eum. Similique!
+    </p>
+
+    <div class="box box4">4</div>
+
+    <!-- div.box.box${$}*6 -->
+    <div class="container">
+      <div class="box box1"><span>1</span></div>
+      <div class="box box2"><span>2</span></div>
+      <div class="box box3"><span>3</span></div>
+      <div class="box box4"><span>4</span></div>
+      <div class="box box5"><span>5</span></div>
+      <div class="box box6"><span>6</span></div>
+    </div>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+      accusantium debitis ratione maxime illum eum explicabo repudiandae id
+      deserunt laborum nesciunt odit omnis cupiditate, vel harum voluptatibus
+      architecto aperiam ab.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOOGLE</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <style>
+      body {
+        padding: clamp(1rem, 1.6rem + 2vw, 5rem);
+      }
+
+      h1 {
+        font-size: clamp(1.6rem, 1.6rem + 2vw, 5rem);
+      }
+
+      .container {
+        position: relative;
+        border: solid red 0px;
+        width: 150px;
+        height: 150px;
+        background-color: #4285f4 !important;
+      }
+
+      .box {
+        position: absolute;
+      }
+
+      .div1 {
+        border-top: solid 30px #ea4335;
+        border-right: solid 30px transparent;
+        border-bottom: solid 30px #34a853;
+        border-left: solid 30px #fbbc05;
+        width: 150px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+      }
+
+      /* .div1::before {
+        content: "";
+        display: block;
+        border-top: solid 30px #ea4335;
+        border-right: solid 30px transparent;
+        border-bottom: solid 30px transparent;
+        border-left: solid 30px transparent;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(-90deg);
+      } */
+
+      .div2 {
+        border-top: solid 30px transparent;
+        border-right: solid 30px #4285f4;
+        border-bottom: solid 30px transparent;
+        border-left: solid 30px transparent;
+        width: 150px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        transform: rotate(45deg);
+        z-index: -1;
+      }
+
+      .div3 {
+        background-color: #4285f4;
+        width: 70px;
+        height: 25px;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        border-radius: 0 0 50% 0;
+      }
+
+      #parent {
+        background-color: #fbbc05;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TITRE</h1>
+    <div class="container" id="parent">
+      <div class="box div1"></div>
+      <div class="box div2"></div>
+      <div class="box div3"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSEUDO-ELEMENTS</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <style>
+      div {
+        width: 300px;
+        height: 200px;
+        background-color: lightblue;
+        position: relative;
+      }
+
+      div::before {
+        content: "";
+        background-image: url(https://images.pexels.com/photos/5424636/pexels-photo-5424636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+        display: block;
+        width: 50%;
+        height: 50%;
+        background-color: antiquewhite;
+      }
+
+      div::after {
+        content: "🍏 ";
+        display: block;
+        width: 50%;
+        height: 50%;
+        background-color: antiquewhite;
+        position: absolute;
+        right: 0;
+      }
+
+      p::before {
+        content: "🍎 ";
+        /* display: block; */
+      }
+      p::after {
+        content: "🍏  ";
+        /* display: block; */
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+
+    <p>aaaa</p>
+  </body>
+</html>

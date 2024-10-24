@@ -1,0 +1,108 @@
+@import url(./reset.css);
+
+:root {
+    --item-1: #ca447e;
+    --item-2: #d14977;
+    --item-3: #d85070;
+    --item-4: #e05b69;
+    --item-5: #e76662;
+    --item-6: #ee745a;
+    --item-7: #f48252;
+    --item-8: #f88f4b;
+    --item-9: #fb9c44;
+    --item-10: #fda83d;
+    --item-11: #feaf36;
+    --item-12: #ffb52f;
+}
+
+body {
+    height: 100vh;
+    padding: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    gap: 2rem;
+    /* margin: 3rem 0; */
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-1 {
+    background-color: var(--item-1);
+}
+
+.item-2 {
+    background-color: var(--item-2);
+}
+
+.item-3 {
+    background-color: var(--item-3);
+}
+
+.item-4 {
+    background-color: var(--item-4);
+}
+
+.item-5 {
+    background-color: var(--item-5);
+}
+
+.item-6 {
+    background-color: var(--item-6);
+}
+
+.item-7 {
+    background-color: var(--item-7);
+}
+
+.item-8 {
+    background-color: var(--item-8);
+}
+
+.item-9 {
+    background-color: var(--item-9);
+}
+
+.item-10 {
+    background-color: var(--item-10);
+}
+
+.item-11 {
+    background-color: var(--item-11);
+}
+
+.item-12 {
+    background-color: var(--item-12);
+}
+
+.grid-body {
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-auto-rows: 1fr 5fr 1fr;
+}
+
+.header {
+    grid-column: 1 / -1;
+}
+
+.footer {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.article {
+    grid-area: 2 / 2 / 3 / 2;
+}
+
+.aside {
+    grid-area: 2 / 1 / 2 / 2;
+}
+
+.nav {
+    /* grid-column: 3 / 4;
+    grid-row: 2/4; */
+    grid-area: 2 / 3 / 4 / 4
+}

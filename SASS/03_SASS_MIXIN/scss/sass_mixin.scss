@@ -1,0 +1,41 @@
+$success: #1f6b1f;
+$danger: #ce4040;
+$warning: #ffa500;
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@mixin button-design($bg-color: #0d46a8, $txt-color: #ffffff) {
+  background-color: $bg-color;
+  color: $txt-color;
+}
+
+.btn {
+  border-radius: 7px;
+  font-size: 20px;
+  border: none;
+  @include button-design;
+}
+
+.btn--success {
+  @include button-design($success);
+}
+
+.btn--danger {
+  @include button-design($danger);
+}
+
+.btn--warning {
+  @include button-design($warning, #000);
+}
+
+.btn--dark {
+  @include button-design(#000, #fff);
+}
+
+.btn--light {
+  @include button-design(#c5bfbf, #000);
+}

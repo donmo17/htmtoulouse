@@ -1,0 +1,112 @@
+@import url('./reset.css');
+
+body {
+    padding: 2rem;
+}
+
+/*---------------------------
+enfants de la grille
+----------------------------*/
+.grid-item,
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1rem;
+}
+
+.content {
+    background: #f5c531;
+    grid-area: content;
+}
+
+
+header {
+    background-color: #55d4eb;
+}
+
+.hero {
+    background-color: #904dd9;
+    grid-area: hero;
+}
+
+.sidebar {
+    background-color: #a0c263;
+    grid-area: sidebar;
+}
+
+.ads {
+    background-color: #898989;
+    grid-area: ads;
+}
+
+.images {
+    background-color: #2bb673;
+    grid-area: images;
+}
+
+.posts {
+    background-color: #b388b9;
+    grid-area: posts;
+}
+
+footer {
+    background-color: #008cff;
+}
+
+h1 {
+    font-size: clamp(1.6rem, 1vw + 2rem, 3rem);
+}
+
+/*---------------------------------------------
+MOBILE
+----------------------------------------------*/
+.grid-container {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+    grid-auto-rows: 100px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "hero"
+        "content"
+        "sidebar"
+        "ads"
+        "images"
+        "posts";
+}
+
+/*---------------------------------------------
+TABLET
+----------------------------------------------*/
+/* 852px / 16 = 53.25 */
+
+@media screen and (min-width: 54em) {
+
+    h1 {
+        font-size: clamp(2rem, 2vw + 2rem, 4rem);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "hero content content"
+            "sidebar ads ads"
+            "images images posts";
+    }
+}
+
+/*---------------------------------------------
+DESKTOP
+----------------------------------------------*/
+@media screen and (min-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "sidebar content hero images"
+            "sidebar posts posts ads";
+    }
+}

@@ -1,0 +1,10 @@
+// Commentaire du fichier scss qui ne sera apparent dans le fichier css généré.
+
+// Variables
+$body-bgcolor: #59c0c0;
+$txt-color: #f6f6f6;
+
+body {
+  background-color: $body-bgcolor;
+  color: $txt-color;
+}

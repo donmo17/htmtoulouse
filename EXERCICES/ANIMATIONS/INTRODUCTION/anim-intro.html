@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANIM_INTRO</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+
+      div {
+        width: 10rem;
+        aspect-ratio: 1/1;
+        background-color: crimson;
+        animation-name: move-up-2;
+        animation-delay: 1s;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: paused;
+        animation-timing-function: cubic-bezier(0.47, 0.85, 0.66, 0.18);
+        /* https://cubic-bezier.com/ */
+      }
+
+      div:hover {
+        animation-play-state: running;
+      }
+
+      @keyframes move-up {
+        from {
+          transform: translateY(0);
+        }
+
+        to {
+          transform: translateY(-20rem);
+          border-radius: 50%;
+          background-color: coral;
+        }
+      }
+
+      @keyframes move-up-2 {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-20rem);
+          border-radius: 50%;
+          background-color: coral;
+        }
+
+        100% {
+          transform: translateY(0);
+          background-color: crimson;
+        }
+      }
+
+      @keyframes move-down {
+        from {
+          transform: translateY(-20rem);
+          border-radius: 50%;
+          background-color: coral;
+        }
+
+        to {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <p class="animate__animated animate__repeat-3 animate__bounce">
+      animate.css : BOUNCE
+    </p>
+  </body>
+</html>

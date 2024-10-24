@@ -1,0 +1,101 @@
+@import url('./reset.css');
+
+body {
+    padding: 2rem;
+}
+
+h1 {
+    background-color: #000000;
+    color: white;
+}
+
+h2 {
+    background-color: #92117c;
+    color: white;
+    margin: 5rem 0 2rem 0;
+}
+
+h3 {
+    width: 80%;
+    background-color: lightblue;
+    margin: 5rem auto 0 auto;
+}
+
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 2rem auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 80%;
+}
+
+.grid-item {
+    background-color: #e74c3c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.grid-auto-rows {
+    grid-auto-rows: 100px;
+}
+
+.row-span-2 {
+    grid-row: span 2;
+}
+
+.col-span-2 {
+    grid-column: span 2;
+}
+
+.auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.grid-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.grid-template-areas {
+    grid-template-areas:
+        "a a a a"
+        "b b b c"
+        "d e e c"
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}

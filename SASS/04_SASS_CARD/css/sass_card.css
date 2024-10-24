@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.card--large {
+  max-width: 500px;
+}
+.card--rounded {
+  border-radius: 7px;
+}
+.card--dark {
+  background-color: #333;
+  color: #fff;
+}
+.card--dark__body__title, .card--dark__body__text {
+  color: #fff;
+}
+.card--dark__footer__button {
+  background-color: #555;
+}
+.card__figure {
+  height: 100px;
+  overflow: hidden;
+}
+.card__image {
+  max-width: 100%;
+  height: auto;
+}
+.card__body {
+  padding: 15px;
+}
+.card__body__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+.card__body__title--small {
+  font-size: 16px;
+}
+.card__body__text {
+  font-size: 16px;
+  color: #666;
+}
+.card__footer {
+  padding: 10px;
+  text-align: center;
+}
+.card__footer__button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.card__footer__button:hover {
+  background-color: #0062cc;
+}
+.card__footer__button--disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+.card__footer__button--disabled:hover {
+  background-color: #ccc;
+}

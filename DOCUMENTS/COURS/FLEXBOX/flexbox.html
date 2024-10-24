@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEXBOX</title>
+    <link rel="stylesheet" href="./css/flexbox.css" />
+  </head>
+  <body>
+    <main>
+      <h1>FLEXBOX</h1>
+
+      <h2>
+        L'axe principal (main axis) est horizontal et l'axe secondaire (cross
+        axis) est vertical
+      </h2>
+
+      <h3>flex-direction : row</h3>
+      <div class="conteneur">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : row-reverse</h3>
+      <div class="conteneur row-reverse">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-wrap : wrap</h3>
+      <div class="conteneur wrap">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+        <div class="element">4</div>
+        <div class="element">5</div>
+        <div class="element">6</div>
+        <div class="element">7</div>
+        <div class="element">8</div>
+        <div class="element">9</div>
+        <div class="element">10</div>
+      </div>
+
+      <h3>flex-direction : row + justify-content : flex-start</h3>
+      <div class="conteneur justify-content-start">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : row + justify-content : flex-end</h3>
+      <div class="conteneur justify-content-end">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : row + justify-content : center</h3>
+      <div class="conteneur justify-content-center">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : row + justify-content : space-between</h3>
+      <div class="conteneur justify-content-space-between">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : row + justify-content : space-around</h3>
+      <div class="conteneur justify-content-space-around">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : row + justify-content : space-evenly</h3>
+      <div class="conteneur justify-content-space-evenly">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : row + align-items : flex-start</h3>
+      <div class="conteneur align-items-start">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : row + align-items : flex-end</h3>
+      <div class="conteneur align-items-end">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : row + align-items : center</h3>
+      <div class="conteneur align-items-center">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : row + align-items : baseline</h3>
+      <div class="conteneur align-items-baseline">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : row + align-items : stretch</h3>
+      <div class="conteneur align-items-stretch">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h2>
+        L'axe principal (main axis) est vertical et l'axe secondaire (cross
+        axis) est horizontal
+      </h2>
+
+      <h3>flex-direction : column</h3>
+      <div class="conteneur vertical">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column-reverse</h3>
+      <div class="conteneur vertical column-reverse">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column + justify-content : flex-start</h3>
+      <div class="conteneur vertical justify-content-start">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column + justify-content : flex-end</h3>
+      <div class="conteneur vertical justify-content-end">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column + justify-content : center</h3>
+      <div class="conteneur vertical justify-content-center">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column + justify-content : space-between</h3>
+      <div class="conteneur vertical justify-content-space-between">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column + justify-content : space-around</h3>
+      <div class="conteneur vertical justify-content-space-around">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column + justify-content : space-evenly</h3>
+      <div class="conteneur vertical justify-content-space-evenly">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column + align-items : flex-start</h3>
+      <div class="conteneur vertical align-items-start">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column + align-items : flex-end</h3>
+      <div class="conteneur vertical align-items-end">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column + align-items : center</h3>
+      <div class="conteneur vertical align-items-center">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column + align-items : baseline</h3>
+      <div class="conteneur vertical align-items-baseline">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h3>flex-direction : column + align-items : stretch</h3>
+      <div class="conteneur vertical align-items-stretch">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+      </div>
+
+      <h2>flex-grow</h2>
+      <div class="conteneur">
+        <div class="element grow-1">flex-grow: 1</div>
+        <div class="element grow-2">flex-grow: 2</div>
+        <div class="element grow-3">flex-grow: 3</div>
+      </div>
+
+      <h2>flex-shrink</h2>
+      <div class="conteneur">
+        <div class="element shrink-1">flex-shrink: 1</div>
+        <div class="element shrink-2">flex-shrink: 2</div>
+        <div class="element shrink-3">flex-shrink: 3</div>
+      </div>
+
+      <h2>flex-basis</h2>
+      <div class="conteneur">
+        <div class="element basis-1">flex-basis: 100px</div>
+        <div class="element basis-2">flex-basis: 200px</div>
+        <div class="element basis-3">flex-basis: 300px</div>
+      </div>
+
+      <h2>flex : flex-grow flex-shrink flex-basis</h2>
+      <div class="conteneur">
+        <div class="element flex-1">flex: 1 1 100px</div>
+        <div class="element flex-2">flex: 2 1 200px</div>
+        <div class="element flex-3">flex: 3 1 300px</div>
+      </div>
+
+      <h2>align-self</h2>
+      <div class="conteneur">
+        <div class="element align-self-start">align-self: flex-start</div>
+        <div class="element align-self-center">align-self: center</div>
+        <div class="element align-self-end">align-self: flex-end</div>
+      </div>
+
+      <h2>order</h2>
+      <div class="conteneur">
+        <div class="element order-3">order: 3</div>
+        <div class="element order-1">order: 1</div>
+        <div class="element order-2">order: 2</div>
+      </div>
+    </main>
+  </body>
+</html>

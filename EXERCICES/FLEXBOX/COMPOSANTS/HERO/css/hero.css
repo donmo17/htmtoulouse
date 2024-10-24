@@ -1,0 +1,25 @@
+@import url(./reset.css);
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: antiquewhite;
+    background-size: cover;
+    height: 30vh;
+    background-image: url(https://images.pexels.com/photos/5424636/pexels-photo-5424636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.hero__btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.hero__btn {
+    padding: 0.5rem 1rem;
+}

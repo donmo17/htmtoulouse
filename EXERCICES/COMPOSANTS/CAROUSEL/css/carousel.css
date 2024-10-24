@@ -1,0 +1,250 @@
+ *,
+ *::before,
+ *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     font-size: 62.5%;
+ }
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #1c2325;
+     color: #eee;
+     height: 100vh;
+ }
+
+ .slider-container {
+     width: 50%;
+     margin: 0 auto;
+ }
+
+ .slider {
+     width: 100%;
+     padding-bottom: 55%;
+     position: relative;
+     border: 10px solid #fff;
+     background-color: #efefe8;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     overflow: hidden;
+ }
+
+ .slider__input {
+     display: none;
+ }
+
+ .slider__content {
+     margin: 0;
+     padding: 0;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 500%;
+     height: 100%;
+     font-size: 0;
+     list-style: none;
+     transition: transform 1s;
+     /* animation: slider-animation 32s infinite; */
+ }
+
+ .slider__item {
+     display: inline-block;
+     width: 20%;
+     height: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ .slider__item--1 {
+     background-image: url("https://source.unsplash.com/random/featured/?nature");
+ }
+
+ .slider__item--2 {
+     background-image: url("https://source.unsplash.com/random/featured/?music");
+ }
+
+ .slider__item--3 {
+     background-image: url("https://source.unsplash.com/random/featured/?web");
+ }
+
+ .slider__item--4 {
+     background-image: url("https://source.unsplash.com/random/featured/?design");
+ }
+
+ .slider__item--5 {
+     background-image: url("https://source.unsplash.com/random/featured/?people");
+ }
+
+ .slider__control {
+     position: absolute;
+     bottom: 18px;
+     left: 50%;
+     text-align: center;
+     transform: translateX(-50%);
+     transition-timing-function: ease-out;
+ }
+
+ .slider__control>label[class^="slider__control--"] {
+     display: inline-block;
+     width: 12px;
+     height: 12px;
+     margin-right: 10px;
+     border-radius: 50%;
+     border: 1px solid #999;
+     background-color: #efefe8;
+     cursor: pointer;
+ }
+
+ .slider__nav label {
+     display: none;
+     position: absolute;
+     top: 50%;
+     padding: 5px 10px;
+     transform: translateY(-50%);
+     cursor: pointer;
+ }
+
+ .slider__nav label::before,
+ .slider__nav label::after {
+     content: "";
+     display: block;
+     width: 8px;
+     height: 24px;
+     background-color: #fff;
+ }
+
+ .slider__nav label::before {
+     margin-bottom: -12px;
+ }
+
+ .slider__nav-label--left {
+     left: 20px;
+ }
+
+ .slider__nav-label--left::before {
+     transform: rotate(45deg);
+ }
+
+ .slider__nav-label--left::after {
+     transform: rotate(-45deg);
+ }
+
+ .slider__nav-label--right {
+     right: 20px;
+ }
+
+ .slider__nav-label--right::before {
+     transform: rotate(-45deg);
+ }
+
+ .slider__nav-label--right::after {
+     transform: rotate(45deg);
+ }
+
+ #slide--1:checked~.slider__content {
+     transform: translateX(0%);
+ }
+
+ #slide--1:checked~.slider__control .slider__control--1 {
+     background-color: #999;
+ }
+
+ #slide--1:checked~.slider__nav .slider__nav--1 {
+     display: block;
+ }
+
+ #slide--2:checked~.slider__content {
+     transform: translateX(-20%);
+ }
+
+ #slide--2:checked~.slider__control .slider__control--2 {
+     background-color: #999;
+ }
+
+ #slide--2:checked~.slider__nav .slider__nav--2 {
+     display: block;
+ }
+
+ #slide--3:checked~.slider__content {
+     transform: translateX(-40%);
+ }
+
+ #slide--3:checked~.slider__control .slider__control--3 {
+     background-color: #999;
+ }
+
+ #slide--3:checked~.slider__nav .slider__nav--3 {
+     display: block;
+ }
+
+ #slide--4:checked~.slider__content {
+     transform: translateX(-60%);
+ }
+
+ #slide--4:checked~.slider__control .slider__control--4 {
+     background-color: #999;
+ }
+
+ #slide--4:checked~.slider__nav .slider__nav--4 {
+     display: block;
+ }
+
+ #slide--5:checked~.slider__content {
+     transform: translateX(-80%);
+ }
+
+ #slide--5:checked~.slider__control .slider__control--5 {
+     background-color: #999;
+ }
+
+ #slide--5:checked~.slider__nav .slider__nav--5 {
+     display: block;
+ }
+
+ @keyframes slider-animation {
+
+     0%,
+     7% {
+         transform: translateX(0%);
+     }
+
+     12.5%,
+     19.5% {
+         transform: translateX(-20%);
+     }
+
+     25%,
+     32% {
+         transform: translateX(-40%);
+     }
+
+     37.5%,
+     44.5% {
+         transform: translateX(-60%);
+     }
+
+     50%,
+     57% {
+         transform: translateX(-80%);
+     }
+
+     62.5%,
+     69.5% {
+         transform: translateX(-60%);
+     }
+
+     75%,
+     82% {
+         transform: translateX(-40%);
+     }
+
+     87.5%,
+     94.5% {
+         transform: translateX(-20%);
+     }
+ }

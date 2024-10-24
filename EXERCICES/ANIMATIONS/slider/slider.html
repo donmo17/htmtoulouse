@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLIDER</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+
+      section {
+        width: 70%;
+        border: solid 5px teal;
+        position: relative;
+        height: 30rem;
+        overflow: hidden;
+      }
+
+      div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        background-color: crimson;
+        animation-name: slider;
+        /* animation-delay: 1s; */
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-timing-function: linear;
+      }
+
+      div:nth-child(1) {
+        left: 0;
+      }
+
+      div:nth-child(2) {
+        background-color: cornflowerblue;
+        left: 100%;
+      }
+
+      div:nth-child(3) {
+        background-color: rgb(68, 197, 77);
+        left: 200%;
+      }
+
+      div:nth-child(4) {
+        background-color: rgb(237, 235, 100);
+        left: 300%;
+      }
+
+      div:nth-child(5) {
+        background-color: rgb(237, 100, 189);
+        left: 400%;
+      }
+
+      @keyframes slider {
+        0%,
+        10% {
+          transform: translateX(0);
+        }
+
+        20%,
+        30% {
+          transform: translateX(-100%);
+        }
+
+        40%,
+        50% {
+          transform: translateX(-200%);
+        }
+
+        60%,
+        70% {
+          transform: translateX(-300%);
+        }
+
+        80%,
+        90% {
+          transform: translateX(-400%);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <!-- (div>{div $})*5 -->
+      <div>div 1</div>
+      <div>div 2</div>
+      <div>div 3</div>
+      <div>div 4</div>
+      <div>div 5</div>
+    </section>
+  </body>
+</html>

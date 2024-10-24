@@ -1,0 +1,53 @@
+@import url(./reset.css);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+img {
+    width: 15rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    transition: 5s transform ease-in-out, 3s opacity ease-in-out;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+section> :first-child img:hover {
+    transform: rotate(200grad);
+    transform: rotate(3turn);
+    transform: rotate(90deg);
+    opacity: 0.2;
+}
+
+section> :nth-child(2) img:hover {
+    transform: scale(2);
+    transform: scale(0.1);
+}
+
+section> :nth-child(3) img:hover {
+    transform: skew(30deg, 30deg);
+    transform: skew(30deg);
+}
+
+section> :nth-child(4) img:hover {
+    transform: translate(4rem);
+    transform: translate(4rem, -4rem);
+}

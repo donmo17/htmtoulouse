@@ -1,0 +1,109 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  // Modificateur pour une card plus grande
+  &--large {
+    max-width: 500px;
+  }
+
+  // Modificateur pour une image plus arrondie
+  &--rounded {
+    border-radius: 7px;
+  }
+
+  // Modificateur pour une card avec un thème sombre
+  &--dark {
+    background-color: #333;
+    color: #fff;
+
+    &__body__title,
+    &__body__text {
+      color: #fff;
+    }
+
+    &__footer__button {
+      background-color: #555;
+    }
+  }
+
+  &__figure {
+    height: 100px;
+    // max-height: 250px;
+    overflow: hidden;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__body {
+    padding: 15px;
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #333;
+
+      // Modificateur pour un titre plus petit
+      &--small {
+        font-size: 16px;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      color: #666;
+    }
+  }
+
+  &__footer {
+    padding: 10px;
+    text-align: center;
+
+    &__button {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &:hover {
+        background-color: darken(#007bff, 10%);
+      }
+
+      // Modificateur pour un bouton désactivé
+      &--disabled {
+        background-color: #ccc;
+        color: #666;
+        cursor: not-allowed;
+
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+}

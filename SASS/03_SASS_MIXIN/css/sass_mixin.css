@@ -1,0 +1,38 @@
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  border-radius: 7px;
+  font-size: 20px;
+  border: none;
+  background-color: #0d46a8;
+  color: #ffffff;
+}
+
+.btn--success {
+  background-color: #1f6b1f;
+  color: #ffffff;
+}
+
+.btn--danger {
+  background-color: #ce4040;
+  color: #ffffff;
+}
+
+.btn--warning {
+  background-color: #ffa500;
+  color: #000;
+}
+
+.btn--dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn--light {
+  background-color: #c5bfbf;
+  color: #000;
+}
